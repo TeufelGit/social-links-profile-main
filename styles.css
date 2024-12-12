@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Cambiado a center para mejor alineación vertical */
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem; /* Cambiado a rem para mayor flexibilidad */
+  }
+  
+  h3 {
+    margin: 0.3rem; /* Cambiado a rem */
+  }
+  
+  img {
+    margin: 1.25rem; /* Cambiado a rem */
+    border-radius: 100%;
+    width: 6.25rem; /* Cambiado a rem */
+    height: 6.25rem; /* Cambiado a rem */
+  }
+  
+  .caja1 {
+    width: 100%; /* Cambiado a porcentaje para ser más flexible */
+    max-width: 350px; /* Añadido max-width para limitar el ancho en pantallas grandes */
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem; /* Añadido padding para mejor espaciado interno */
+  }
+  
+  .caja2 {
+    margin: 1.25rem auto; /* Cambiado a rem y centrado horizontalmente */
+    padding: 1.25rem; /* Cambiado a rem */
+    width: 90%; /* Cambiado a porcentaje para ser más flexible */
+    max-width: 320px; /* Mantenido el ancho máximo */
+    height: auto; /* Cambiado a auto para ajustarse al contenido */
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 30%);
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .caja2:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 375px) {
+    .caja1 {
+      font-size: 1.2rem; /* Reducido el tamaño de fuente para pantallas pequeñas */
+    }
+  
+    .caja2 {
+      margin: 1rem auto; /* Reducido el margen para pantallas pequeñas */
+      padding: 1rem; /* Reducido el padding para pantallas pequeñas */
+    }
+  }
